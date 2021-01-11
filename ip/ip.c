@@ -311,9 +311,6 @@ int main(int argc, char **argv)
 
 	rtnl_set_strict_dump(&rth);
 
-	if (strlen(basename) > 2)
-		return do_cmd(basename+2, argc, argv);
-
 	if (argc > 1)
 		return do_cmd(argv[1], argc-1, argv+1);
 
